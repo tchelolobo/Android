@@ -65,6 +65,7 @@ public class EnviaAlunosTask extends AsyncTask<Object,Object,String> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
+        
         progress = ProgressDialog.show(context,"Aguarde...","Envio de dados para a WEB",true,true);
 
     }
