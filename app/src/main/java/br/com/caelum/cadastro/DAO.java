@@ -28,7 +28,8 @@ public class DAO extends SQLiteOpenHelper{
         String ddl = "CREATE TABLE " + TABELA
                 + "(id INTEGER PRIMARY KEY,"
                 + "nome TEXT NOT NULL,"
-                + "telefone TEXT,"
+                + "telefone TEXT, " +
+                "caminhoFoto text, "
                 + "endereco TEXT,"
                 + "site TEXT,"
                 + " nota REAL); ";
