@@ -185,7 +185,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 String json = new AlunoConverter().toJSON(alunos);
 
 //                WebClient client = new WebClient();
-//                try {
+//                try {onOpt
 //                    resposta = client.post(json);
 //                } catch (IOException e) {
 //                    e.printStackTrace();
@@ -195,6 +195,10 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 envia.execute();
 
                 return true;
+            case R.id.menu_receber_provas:
+                Intent provas = new Intent(this,ProvasActivity.class);
+                startActivity(provas);
+                return  true;
         }
         return super.onOptionsItemSelected(item);
     }
